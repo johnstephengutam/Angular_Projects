@@ -1,0 +1,17 @@
+* {
+    text-align: center;
+}
+
+div.classic{
+    background-color: rgb(37, 75, 119);
+    opacity: 0.9;
+}   
+
+p {
+    color: black;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url("img_tree.png");
+}

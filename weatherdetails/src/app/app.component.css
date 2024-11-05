@@ -1,0 +1,20 @@
+body {
+    background-color: bisque;
+}
+
+.border {
+    float: center;
+    border: 5px solid red;
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+  }
+
+  .content{
+    padding: 20px;
+    border: 1px solid blue;
+    text-align: center;
+    margin-top: 50px;          /* Add top margin */
+    margin-left: 500px;         /* Add left margin */
+    margin-right: 500px;        /* Add right margin */
+    margin-bottom: 50px;  
+  }

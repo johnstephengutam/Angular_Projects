@@ -1,0 +1,20 @@
+.res{
+    background-color: aqua;
+}
+
+.climate-details {
+    display: flex;               /* Enable Flexbox */
+    justify-content: space-between; /* Space items between left and right */
+    align-items: center;         /* Center vertically */
+}
+
+.temperature {
+    /* Optional styling for temperature */
+    flex: 1;                     /* Allow this div to grow */
+}
+
+.weather-info {
+    /* Optional styling for wind and humidity */
+    text-align: right;           /* Align text to the right */
+    flex: 1;                     /* Allow this div to grow */
+}

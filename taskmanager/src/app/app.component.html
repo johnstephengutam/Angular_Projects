@@ -1,0 +1,30 @@
+
+<style>
+ 
+</style>
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+      <h1>{{ title }}</h1>
+      <p style="padding: 10px;">Congratulations! Your app is running. 🎉</p>
+
+      <div>
+        <form>
+          <label>Task name: </label> <input type = "text" [(ngModel)]="taskname" placeholder="Enter a task" [ngModelOptions]="{ standalone: true }"> 
+          <button (click) = "addTask(createTask(taskname))">Add Task</button> <br />
+          <label  [ngStyle] = "{ color: !yes ? 'red' : 'green' }"> Task List: </label>
+          <div *ngFor="let task of taskList">
+            <label>
+              <input type = "checkbox" [(ngModel)]="task.selected" name="task{{task.id}}">{{task.name}}
+            </label>
+          </div>
+          <button (click) = "deleteTask()">Remove Task</button> <br />
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</main>
+
+<router-outlet />

@@ -1,0 +1,7 @@
+<p>Give your values here!</p>
+<div>
+    <pre>
+    Celsius:    <input type="text" [(ngModel)]="cel" (ngModelChange) = "toFahrenheit($event)">
+    Fahrenheit: <input type="text" [(ngModel)]="fah" (ngModelChange) = "toCelcius($event)">
+    </pre>
+</div>

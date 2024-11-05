@@ -1,0 +1,115 @@
+<!-- Page Content --> 
+<div class="container"> 
+    <div class="row"> 
+       <div class="col-lg-12 text-center" style="padding-top: 20px;"> 
+          <div class="container" style="padding-left: 0px; padding-right: 0px;"> 
+             <div class="row"> 
+             <div class="col-sm" style="text-align: left;"> {{ title }} 
+             </div> 
+             <div class="col-sm" style="text-align: right;"> 
+               <button type="button" class="btn btn-primary" (click)="goToList()">Go to List</button>
+                <button type="button" class="btn btn-primary">Edit</button> 
+             </div> 
+             </div> 
+          </div> 
+          <div class="container box" style="margin-top: 10px;"> 
+          <div class="row"> 
+          <div class="col-2" style="text-align: right;">  
+             <strong><em>firstName:</em></strong> 
+          </div> 
+          <div class="col" style="text-align: left;"> 
+             {{expenseEntry.firstName}} 
+          </div>
+          </div> 
+          <div class="row"> 
+          <div class="col-2" style="text-align: right;">
+             <strong><em>lastName:</em></strong> 
+          </div> 
+          <div class="col" style="text-align: left;"> 
+            {{expenseEntry.lastName}}  
+          </div> 
+          </div> 
+          <div class="row"> 
+          <div class="col-2" style="text-align: right;"> 
+             <strong><em>streetAddress:</em></strong> 
+          </div> 
+          <div class="col" style="text-align: left;"> 
+            {{expenseEntry.streetAddress}}  
+          </div> 
+          </div> 
+          <div class="row"> 
+          <div class="col-2" style="text-align: right;"> 
+             <strong><em>city:</em></strong>
+          </div> 
+          <div class="col" style="text-align: left;"> 
+            {{expenseEntry.city}}  
+          </div> 
+          </div> 
+          <div class="row"> 
+          <div class="col-2" style="text-align: right;"> 
+             <strong><em>state:</em></strong> 
+          </div> 
+          <div class="col" style="text-align: left;"> 
+            {{expenseEntry.state}} 
+          </div> 
+          </div> 
+          <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>zip:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.zip}} 
+            </div> 
+         </div> 
+         <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>telephoneNumber:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.telephoneNumber}} 
+            </div> 
+         </div>    
+         <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>email:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.email}} 
+            </div> 
+         </div> 
+         <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>dateOfSurvey:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.dateOfSurvey}} 
+            </div> 
+         </div>    
+         <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>likedMost:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.likedMost}} 
+            </div> 
+         </div>       
+         <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>interestSource:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.interestSource}} 
+            </div> 
+         </div> 
+         <div class="row"> 
+            <div class="col-2" style="text-align: right;"> 
+               <strong><em>recommendation:</em></strong> 
+            </div> 
+            <div class="col" style="text-align: left;"> 
+              {{expenseEntry.recommendationLikelihood}} 
+            </div> 
+         </div>      
+       </div> 
+    </div> 
+ </div> 
+ </div>

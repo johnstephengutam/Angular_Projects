@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body >
+        <div>
+            <div>
+                <label>Enter City: </label> <input type="text" [(ngModel)]="city" (ngModelChange)="getClimateDetails($event)"> <br/>
+            </div>
+            <div class="res climate-details">
+                <div *ngIf="cityFound; else noResults" >
+                    <div class="temperature">
+                        <label>Temperature: </label> {{temp}}<br/>
+                    </div>
+                    <div class="weather-info">
+                        <label>Wind: </label> {{wind}}<br/>
+                        <label>Humidity: </label>{{humidity}}<br/>
+                    </div>
+                </div>
+                <ng-template #noResults>
+                    <p>No results found for {{city}}</p>
+                </ng-template>
+            </div>
+        </div>
+    </body>
+</html>
+
